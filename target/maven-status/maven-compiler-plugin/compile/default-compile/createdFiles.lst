@@ -1,1 +1,5 @@
+org\taskTracker\Interface.class
 org\taskTracker\Main.class
+org\taskTracker\Model$Status.class
+org\taskTracker\Model.class
+org\taskTracker\Store.class

@@ -1,6 +1,7 @@
 package org.taskTracker;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 class Model {
 	int id;
@@ -14,8 +15,9 @@ class Model {
     LocalDateTime createdAt;
     LocalDateTime updatedAt;
 
-    public Model(int id, String description, Status stat) {
-        this.id = id;
+    public Model(String description) {
+        this.id = UUID.randomUUID().hashCode();
+        this.status = Status.TODO;
         this.description = description;
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();

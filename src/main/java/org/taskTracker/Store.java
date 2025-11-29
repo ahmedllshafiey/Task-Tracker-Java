@@ -18,9 +18,9 @@ class Store {
         }
     }
 
-    public void update(Model task) {
+    public void update(int id, Model task) {
         for (int i = 0; i < count; i++) {
-            if (tasks[i].id == task.id) {
+            if (tasks[i].id == id) {
                 tasks[i] = task;
                 tasks[i].updatedAt = java.time.LocalDateTime.now();
                 return;

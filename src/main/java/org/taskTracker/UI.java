@@ -1,8 +1,10 @@
 package org.taskTracker;
 
-class Interface {
+import java.io.IOException;
+
+public class UI {
     
-    public void Interface(String[] args) {
+    public UI(String[] args) throws IOException {
         if (args.length == 0) {
             System.out.println("No arguments provided.");
         }

@@ -12,6 +12,7 @@ class Model {
         DONE
     }
     Status status;
+    @SuppressWarnings("unused")
     LocalDateTime createdAt;
     LocalDateTime updatedAt;
 

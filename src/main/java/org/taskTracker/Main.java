@@ -6,6 +6,6 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         @SuppressWarnings("unused")
-        UI ui = new UI(args);
+        Interface ui = new Interface(args);
     }
 }
